@@ -6,7 +6,8 @@
   "workspaceFolder": "/workspace",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "22"
+      "version": "22",
+      "pnpmVersion": "none"
     }
   },
   "forwardPorts": [8080, 5173, 5432],
