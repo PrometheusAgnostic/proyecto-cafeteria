@@ -26,5 +26,5 @@
       ]
     }
   },
-  "postCreateCommand": "mvn -f backend/pom.xml dependency:go-offline && npm --prefix frontend install"
+  "postCreateCommand": "git config --global --add safe.directory /workspace && mvn -f backend/pom.xml dependency:go-offline && npm --prefix frontend install"
 }
