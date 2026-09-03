@@ -14,7 +14,7 @@
     <name>cafeteria-api</name>
     <description>API for the cafeteria application</description>
     <properties>
-        <java.version>21</java.version>
+        <java.version>25</java.version>
     </properties>
     <dependencies>
         <dependency>
