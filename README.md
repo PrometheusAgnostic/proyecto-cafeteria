@@ -200,7 +200,7 @@ El `postCreateCommand` instala las dependencias Maven y npm al crear el contened
 
 El repositorio contiene actualmente el esqueleto de una API Spring Boot y un frontend Vue/Vite. La propuesta funcional descrita en este README representa el producto objetivo; los modulos de identidad, catalogo, inventario, pedidos, billetera, pagos, cola y auditoria deben implementarse progresivamente.
 
-Nota: la guia del proyecto menciona Java 21, pero `backend/pom.xml` establece actualmente `java.version` en `25`. Hay que unificar esa decision antes de fijar la imagen definitiva del Dev Container y el pipeline de CI.
+La imagen del Dev Container y `backend/pom.xml` usan Java 21 para mantener alineados el entorno local y el backend.
 
 ## Plan de implementacion
 
