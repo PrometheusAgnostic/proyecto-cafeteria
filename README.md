@@ -185,16 +185,17 @@ El entorno usa Docker Compose con PostgreSQL 16. Para trabajar con la configurac
 | --- | --- | --- |
 | API Spring Boot | `mvn -f backend/pom.xml spring-boot:run` | `8080` |
 | Frontend Vue/Vite | `npm --prefix frontend run dev` | `5173` |
-| PostgreSQL | Servicio `postgres` de Compose | `5432` |
+| PostgreSQL | Servicio `db` de Compose | `5432` |
 
 Comandos de verificacion:
 
 ```bash
 mvn -f backend/pom.xml verify
 npm --prefix frontend run build
+psql postgresql://dev:dev@db:5432/appdb -c "select 1;"
 ```
 
-El `postCreateCommand` instala las dependencias Maven y npm al crear el contenedor. Las credenciales de PostgreSQL definidas en Compose son solo para desarrollo local y no deben reutilizarse en produccion.
+El script `.devcontainer/setup.sh` instala las dependencias Maven y npm al crear el contenedor. Las credenciales de PostgreSQL definidas en Compose son solo para desarrollo local y no deben reutilizarse en produccion.
 
 ### Estado actual del repositorio
 

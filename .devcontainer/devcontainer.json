@@ -2,7 +2,7 @@
   "name": "Cafeteria Development",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "app",
-  "runServices": ["postgres"],
+  "runServices": ["db"],
   "workspaceFolder": "/workspace",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
@@ -26,5 +26,5 @@
       ]
     }
   },
-  "postCreateCommand": "git config --global --add safe.directory /workspace && mvn -f backend/pom.xml dependency:go-offline && npm --prefix frontend install"
+  "postCreateCommand": "bash .devcontainer/setup.sh"
 }
