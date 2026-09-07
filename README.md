@@ -98,7 +98,7 @@ Se recomienda comenzar como un monolito modular: es mas sencillo de desplegar, p
 | Capa | Tecnologia propuesta | Responsabilidad |
 | --- | --- | --- |
 | Frontend | Vue 3, TypeScript, Vite, Pinia y Vue Router | PWA responsive, experiencia del estudiante y panel operativo. |
-| API | Java 21 y Spring Boot 3 | REST, reglas de negocio, seguridad, pedidos, saldo e inventario. |
+| API | Java 25 y Spring Boot 3 | REST, reglas de negocio, seguridad, pedidos, saldo e inventario. |
 | Datos | PostgreSQL y Flyway | Persistencia transaccional, migraciones, auditoria y reportes. |
 | Pagos | Stripe Payments y webhooks | Recargas y pagos con tarjeta, verificados server-to-server. |
 | Tiempo real | Spring WebSocket/STOMP o SSE | Actualizacion de la cola y estados sin recargar. |
@@ -201,7 +201,7 @@ El script `.devcontainer/setup.sh` instala las dependencias Maven y npm al crear
 
 El repositorio contiene actualmente el esqueleto de una API Spring Boot y un frontend Vue/Vite. La propuesta funcional descrita en este README representa el producto objetivo; los modulos de identidad, catalogo, inventario, pedidos, billetera, pagos, cola y auditoria deben implementarse progresivamente.
 
-La imagen del Dev Container y `backend/pom.xml` usan Java 21 para mantener alineados el entorno local y el backend.
+La imagen del Dev Container y `backend/pom.xml` usan Java 25 para mantener alineados el entorno local y el backend.
 
 ## Plan de implementacion
 
