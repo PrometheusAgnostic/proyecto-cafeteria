@@ -2,7 +2,7 @@
 
 ## Stack
 
-- Backend: Java 21, Spring Boot 3.5, Maven, Spring Data JPA.
+- Backend: Java 25, Spring Boot 3.5, Maven, Spring Data JPA.
 - Database: PostgreSQL 16, available as the `db` Compose service.
 - Frontend: Vue 3 and Vite on Node.js 22.
 - Development environment: VS Code Dev Container using Docker Compose.

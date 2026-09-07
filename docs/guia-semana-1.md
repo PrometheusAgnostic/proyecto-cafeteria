@@ -225,7 +225,7 @@ npm --prefix frontend run build
 Resultados esperados:
 
 - Node 22.x.
-- Java 21.x.
+- Java 25.x.
 - Git disponible.
 - PostgreSQL devuelve `1`.
 - Maven termina con `BUILD SUCCESS`.
